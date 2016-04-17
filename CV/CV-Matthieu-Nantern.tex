@@ -1,0 +1,149 @@
+% Exemple de CV utilisant la classe moderncv
+% Style classic en bleu
+% Article complet : http://blog.madrzejewski.com/creer-cv-elegant-latex-moderncv/
+
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+\usepackage[T1]{fontenc}           
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.9]{geometry}
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{3cm}
+
+\firstname{Matthieu}
+\familyname{Nantern}
+\title{Architecte d'implémentation}              
+\address{6, Rue René Haby}{91230 Montgeron}    
+\email{matthieu.nantern@gmail.com}
+\mobile{06.83.14.85.06} 
+\extrainfo{30 ans -- Permis B}
+
+\newcommand\Colorhref[3][color1]{\href{#2}{\small\color{#1}#3}}
+
+\begin{document}
+\maketitle
+
+\section{Compétences}
+\begin{itemize}
+\item[-] \textbf{Cinq années d'expériences} chez Capgemini, l'un des leaders en services informatiques suivies de \textbf{3 années d'expérience} chez Xebia, cabinet de conseil IT spécialisé dans les technologies Big Data, Web et les architectures Java dans des environnements agiles.
+\item[-] \textbf{Bon relationnel} reconnu par les clients et les collaborateurs.
+\item[-] Forte \textbf{compétence technique}.
+\end{itemize}
+
+\section{Expériences professionnelles}
+\cventry{Depuis Juin 2014}{Architecte d'implémentation}{Docapost Iot}{Xebia}{}{Développement du "Hub Numérique", une plateforme dédiée à l'internet des objets (IoT).\newline{}%
+\begin{itemize}%
+\item[-]Conception et choix du socle technique.
+\item[-]Suivi d'une équipe technique composée de 25 personnes.
+\item[-]Mise en place de la plateforme d'intégration continue et du processus d'installation et configuration automatique via Puppet.
+\item[-]Développement de la solution.
+\end{itemize}
+\vspace*{3mm}
+\textit{environnement technique}: Java 8 / Spring MVC / Cassandra / Puppet / ElasticSearch / VertX / Docker / API Rest / IoT / Jenkins}
+\vspace*{5mm}
+\cventry{Mars 2016}{Formateur}{Cassandra}{Xebia Training}{}{Formation autour d'Apache Cassandra une base de données NoSQL organisée sur 2 jours.}
+\vspace*{5mm}
+\cventry{Septembre 2013 - Juin 2014}{DevOps}{Banque de France}{Xebia}{}{Mise en place d'une solution de "continuous delivery" pour la Banque de France.\newline{}%
+\begin{itemize}%
+\item[-]Développement des modules Puppet pour l'ensemble des middleware de la Banque de France.
+\item[-]Aide aux projets pour le déploiement des livraisons applicatives via l'outil DeployIt.
+\item[-]Réalisation de Value Stream Map permettant de caractériser les processus de livraison des environnements projets.
+\end{itemize}
+\vspace*{3mm}
+\textit{environnement technique}: Java / Puppet / DeployIt}
+\vspace*{5mm}
+\cventry{Octobre 2013}{Speaker Xebia}{Cassandra Summit Europe 2013}{ Delivering Christmas Gifts in France Since 2012}{}{Présentation d'un \Colorhref{http://www.slideshare.net/planetcassandra/c-summit-eu-2013-delivering-christmas-gifts-in-france-since-2012}{retour d'expérience} sur la mise en place de Cassandra à La Poste.}
+\vspace*{5mm}
+\cventry{Avril - Septembre 2013}{Intégrateur}{Ministère de l'Intérieur}{projet FAETON}{}{Intégration du projet FAETON en coordination avec les équipes du Ministère.\newline{}%
+\begin{itemize}%
+\item[-]Installation de la solution en production (plus de 250 serveurs).
+\item[-]Amélioration des procédures d'installation et d'exploitation.
+\end{itemize}
+\vspace*{3mm}
+\textit{environnement technique}: Java / JEE / JBoss / Oracle DB / Puppet}
+\vspace*{5mm}
+\cventry{Décembre 2010 - Avril 2013}{Responsable Technique}{La Poste}{projet TAE}{}{Responsable du développement et des travaux techniques du projet.\newline{}%
+\begin{itemize}%
+\item[-]Concevoir, développer et tester les tâches de développement.
+\item[-]Maintien d’un niveau élevé de service pour les environnements d'exploitation (plus de 1500 serveurs  actuellement) et lors des phases de mise en production.
+\item[-]Fournir un support technique auprès de l'\textbf{équipe de 10 personnes}. 
+\item[-]Mise en place d'une solution de type \textbf{NoSQL}.
+\end{itemize}
+\vspace*{3mm}
+\textit{environnement technique}: LAMP / Puppet / Cassandra / Haute Disponibilité / Méthode Agile}
+\vspace*{5mm}
+\cventry{Septembre 2009 - Décembre 2010}{Responsable Technique}{La Poste}{projet COMET}{}{Responsable du développement et des travaux techniques du projet.\newline{}%
+\begin{itemize}%
+\item[-]Concevoir, développer et tester les tâches de développement du backlog technique (moteur de recherche SolR, packaging, Puppet, socle de supervision, exploitation,...).
+\item[-]Assurer un \textbf{transfert de compétences} auprès des équipes de développement La Poste intégrées au projet.
+\item[-]Prendre en charge la gestion des plateformes de développement et assurer un support auprès des équipes La Poste pour les environnements d'exploitation. 
+\end{itemize}
+\vspace*{3mm}
+\textit{environnement technique}: LAMP / Exalead / Puppet / Méthode Agile}
+\vspace*{5mm}
+\cventry{Mars - Septembre 2009}{Consultant Technique}{Ministère de la Justice}{projet Messager2}{}{
+\begin{itemize}%
+\item[-]Responsable système du projet: installation, administration et documentation des plateformes.
+\item[-]Développeur: développement du module de reprise des données de l'ancienne application Messager.
+\end{itemize}
+\vspace*{3mm}
+\textit{environnement technique}: Java / J2E / Struts / Hibernate / Alfresco / MySQL / Lucene}
+\vspace*{5mm}
+\cventry{Novembre 2008 - Mars 2009}{Consultant Technique}{Ministère de l'Éducation Nationale}{projet SIRHEN}{}{
+\begin{itemize}%
+\item[-]Participation à l'avant-vente pour le projet SIRHEN. Étude des forges logicielles et présentation au Ministère.
+\item[-]Élaboration du futur cadre de travail du projet (environnement de développement, forge logicielle, versionning, MDA,...).
+\end{itemize}
+\vspace*{3mm}
+\textit{environnement technique}: Forges Logicielles / MDA / Eclipse}
+\vspace*{5mm}
+\cventry{Juin 2008 - Novembre 2008}{Consultant}{Capgemini}{cellule Industrialisation}{}{
+\begin{itemize}%
+\item[-]Amélioration de l'industrialisation des nouveaux projets via l'utilisation d'une forge logicielle.
+\item[-]Développement d'un outil permettant l'automatisation d'actions sur la forge logicielle.
+\end{itemize}
+\vspace*{3mm}
+\textit{environnement technique}: Forge Logicielle, Java, Swing, Web Services}
+\vspace*{5mm}
+
+\section{Compétences Informatique}
+\cvdoubleitem{Langages}{Java, PHP, Python, Bash}{Déploiement}{DevOps, Puppet, Ansible, DeployIt}
+\cvdoubleitem{Base de Données}{Cassandra, MySQL}{Développement}{Méthode Agile, TDD, Intégration Continue}
+\cvdoubleitem{Moteurs de Recherche}{ElasticSearch, SolR, Lucene}{Administration}{Linux, Apache, Tomcat, MySQL, Cassandra}
+
+\section{Publication}
+\cventry{Novembre 2015}{TechTrends Cloud}{WeScale}{}{}{Dans le paysage IT actuel, le Cloud Computing est omniprésent. Cependant, même si son adoption progresse au sein des entreprises, la migration de tout ou partie d’un parc applicatif reste bien souvent complexe. \Colorhref{http://blog.wescale.fr/techtrends-cloud/}{Cet ouvrage} vous permettra d’y voir plus clair dans ce large panel d’offres.}
+\cventry{Mars 2015}{Cassandra, partez sur une bonne base !}{http://www.programmez.com}{}{}{Article présentant Cassandra une base de données NoSQL développée par la fondation Apache. L'article est disponible \Colorhref{http://blog.xebia.fr/2015/07/13/cassandra-partez-sur-de-bonnes-bases/}{sur le blog de Xebia.}}
+\cventry{Novembre 2015}{Dossier DevOps}{http://www.programmez.com}{}{}{Un dossier complet sur une nouvelle façon de travailler rapprochant les développeurs (Dev) et les exploitants (Ops) et qui a su s'imposer en quelques années. L'article est disponible \Colorhref{http://blog.xebia.fr/2015/06/09/draft-article-de-presse-dossier-devops/}{sur le blog de Xebia.}}
+
+
+\section{Formation}
+\cventry{2015}{ScrumMaster Certifié}{Xebia}{}{}{Formation certifiante "ScrumMaster" de la Scrum Alliance}
+\cventry{2011 -- 2012}{Booster Architecte}{Capgemini}{}{}{Cursus interne Capgemini offrant de nombreuses formations dans les domaines de l'architecture et de la communication (25 jours sur 2 ans)}
+\cventry{2005 -- 2008}{Ingénieur Grande École}{École Nationale Supérieure d’Informatique pour l’Industrie et l’Entreprise (ENSIIE)}{}{}{
+École généraliste en informatique recrutant sur le concours Centrale-Supélec.
+\begin{itemize}%
+\item[-]Les principaux domaines étudiés sont l'informatique, les langues étrangères, les mathématiques et le management. 
+\item[-]Spécialisation en système d’exploitation, administration de LAN et réseaux (TCP/IP).
+\end{itemize}}
+
+\section{Langues}
+\cvitemwithcomment{Français}{Courant}{
+\begin{itemize}%
+\item[-]Langue maternelle
+\end{itemize}}
+\cvitemwithcomment{Anglais}{Courant}{
+\begin{itemize}%
+\item[-]Dix ans d’études, 1 semaine de formation en immersion à Dublin (ALPHA College of English).
+\item[-]Nombreux voyages dans des pays anglophones (États-Unis, Islande, Irlande, Afrique du Sud).
+\item[-]TOEIC: 915/990
+\end{itemize}}
+
+\section{Centres d'intérêt}
+\cvline{\textbf{Voyages}}{
+Grande passion pour les voyages et la découverte d’autres cultures.}
+\cvline{\textbf{Logiciels Libres}}{Participation à quelques logiciels libres autour de Cassandra (\Colorhref{https://github.com/thobbs/phpcassa}{phpcassa},\Colorhref{https://github.com/sebgiroux/Cassandra-Cluster-Admin}{Cassandra Cluster admin}) et de todo.txt (\Colorhref{https://github.com/mNantern/QTodoTxt}{QTodoTxt}).}
+\cvline{\textbf{Badminton}}{Pratique en club depuis 5 ans en simple et en double.}
+
+\end{document}
+
